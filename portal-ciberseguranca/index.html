@@ -37,9 +37,6 @@
         <!-- Seção Hero -->
         <section id="home" class="hero container">
             <div class="hero-content">
-                <div class="badge">
-                    ✨ Repositório Completo e Gratuito
-                </div>
                 <h1>Domine  
 <span class="text-gradient">Cibersegurança</span></h1>
                 <p>Portal completo de estudos para iniciantes em cibersegurança. Aprenda teoria, pratique com labs, memorize com flashcards e teste seus conhecimentos com simulados.</p>
@@ -76,7 +73,7 @@
 
                 <div class="features-grid">
                     <!-- Card 1 -->
-                    <div class="feature-card">
+                    <div class="feature-card" data-feature="teoria">
                         <div class="icon-wrapper">
                             <i class="fas fa-book-open"></i>
                         </div>
@@ -85,7 +82,7 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="feature-card">
+                    <div class="feature-card" data-feature="labs">
                         <div class="icon-wrapper">
                             <i class="fas fa-code"></i>
                         </div>
@@ -94,7 +91,7 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="feature-card">
+                    <div class="feature-card" data-feature="flashcards">
                         <div class="icon-wrapper">
                             <i class="fas fa-bolt"></i>
                         </div>
@@ -103,7 +100,7 @@
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="feature-card">
+                    <div class="feature-card" data-feature="cheatsheets">
                         <div class="icon-wrapper">
                             <i class="fas fa-bullseye"></i>
                         </div>
@@ -112,7 +109,7 @@
                     </div>
 
                     <!-- Card 5 -->
-                    <div class="feature-card">
+                    <div class="feature-card" data-feature="simulados">
                         <div class="icon-wrapper">
                             <i class="fas fa-shield-alt"></i>
                         </div>
@@ -121,7 +118,7 @@
                     </div>
 
                     <!-- Card 6 -->
-                    <div class="feature-card">
+                    <div class="feature-card" data-feature="gratuito">
                         <div class="icon-wrapper">
                             <i class="fas fa-lock-open"></i>
                         </div>
@@ -142,7 +139,7 @@
 
                 <div class="modules-grid">
                     <!-- Módulo 1 -->
-                    <div class="module-learning-card">
+                    <div class="module-learning-card" data-module="1">
                         <div class="icon-wrapper">
                             <i class="fas fa-shield-alt"></i>
                         </div>
@@ -155,7 +152,7 @@
                     </div>
 
                     <!-- Módulo 2 -->
-                    <div class="module-learning-card">
+                    <div class="module-learning-card" data-module="2">
                         <div class="icon-wrapper">
                             <i class="fas fa-at"></i>
                         </div>
@@ -168,7 +165,7 @@
                     </div>
 
                     <!-- Módulo 3 -->
-                    <div class="module-learning-card">
+                    <div class="module-learning-card" data-module="3">
                         <div class="icon-wrapper">
                             <i class="fas fa-key"></i>
                         </div>
@@ -181,7 +178,7 @@
                     </div>
 
                     <!-- Módulo 4 -->
-                    <div class="module-learning-card">
+                    <div class="module-learning-card" data-module="4">
                         <div class="icon-wrapper">
                             <i class="fas fa-code-branch"></i>
                         </div>
@@ -194,7 +191,7 @@
                     </div>
 
                     <!-- Módulo 5 -->
-                    <div class="module-learning-card">
+                    <div class="module-learning-card" data-module="5">
                         <div class="icon-wrapper">
                             <i class="fas fa-network-wired"></i>
                         </div>
@@ -207,7 +204,7 @@
                     </div>
 
                     <!-- Módulo 6 -->
-                    <div class="module-learning-card">
+                    <div class="module-learning-card" data-module="6">
                         <div class="icon-wrapper">
                             <i class="fas fa-book"></i>
                         </div>
@@ -235,9 +232,19 @@
         </section>
     </main>
 
+    <!-- Modal para Detalhes do Módulo -->
+    <div id="moduleModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody" class="modal-body">
+                <!-- Conteúdo preenchido via JS -->
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
-            <p>&copy; 2023 CyberSecurity Study Hub. Projeto Open Source.</p>
+            <p>&copy; 2026 CyberSecurity Study Hub. Projeto Open Source.</p>
         </div>
     </footer>
 
